@@ -1,0 +1,72 @@
+/* Custom styles & animations for Bhargavi Marturi's Portfolio */
+
+/* Custom smooth scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #090d16;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1f293d;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #06b6d4;
+}
+
+/* Glassmorphism helpers */
+.glass {
+  background: rgba(15, 23, 42, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* Pulse badge animation */
+@keyframes softPulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+}
+
+.animate-soft-pulse {
+  animation: softPulse 3s infinite ease-in-out;
+}
+
+/* Print Styles for Resume */
+@media print {
+  body {
+    background: #ffffff !important;
+    color: #111827 !important;
+  }
+  header, footer, #hero, #about, #experience, #projects, #skills, #education, #certifications, #contact {
+    display: none !important;
+  }
+  #resumeModal {
+    display: block !important;
+    position: static !important;
+    background: #ffffff !important;
+    padding: 0 !important;
+  }
+  #resumeModal > div {
+    border: none !important;
+    box-shadow: none !important;
+    max-width: 100% !important;
+    background: #ffffff !important;
+    color: #111827 !important;
+  }
+  #resumeModal button {
+    display: none !important;
+  }
+  .print\:text-black {
+    color: #000000 !important;
+  }
+}

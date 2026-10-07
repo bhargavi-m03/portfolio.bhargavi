@@ -1,0 +1,1440 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bhargavi Marturi | IoT & Cybersecurity Blockchain Engineer | AI & NLP Developer</title>
+  <meta name="description" content="Portfolio of Bhargavi Marturi - B.Tech in IoT & Cybersecurity Blockchain, DRDO AI Technologies Intern, NLP & AI Developer.">
+  <meta name="keywords" content="Bhargavi Marturi, Portfolio, AI, NLP, DRDO, Cybersecurity, IoT, Blockchain, Python, Django">
+  <meta name="author" content="Bhargavi Marturi">
+  <meta property="og:title" content="Bhargavi Marturi | IoT & Cybersecurity Blockchain Engineer | AI & NLP Developer">
+  <meta property="og:description" content="Portfolio of Bhargavi Marturi — B.Tech in IoT, Cybersecurity & Blockchain (PACE Institute, 8.12 CGPA), DRDO DLRL AI Intern, and Developer of Agri Chatbot (NLP).">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://bhargavi-marturi.surge.sh">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Bhargavi Marturi | IoT & Cybersecurity Blockchain Engineer">
+  <meta name="twitter:description" content="Explore Bhargavi Marturi's portfolio featuring DRDO AI internship, Agri Chatbot NLP system, and IoT projects.">
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#ecfeff',
+              100: '#cffafe',
+              200: '#a5f3fc',
+              300: '#67e8f9',
+              400: '#22d3ee',
+              500: '#06b6d4',
+              600: '#0891b2',
+              700: '#0e7490',
+              800: '#155e75',
+              900: '#164e63',
+            },
+            accent: {
+              cyan: '#06b6d4',
+              emerald: '#10b981',
+              violet: '#8b5cf6',
+              dark: '#0B0F19',
+              card: '#111827',
+              border: '#1f2937'
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts & Font Awesome Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-cyan-500 selection:text-black min-h-screen relative overflow-x-hidden transition-colors duration-300">
+
+  <!-- Ambient Glowing Background Blobs -->
+  <div class="fixed inset-0 pointer-events-none z-0 overflow-hidden">
+    <div class="absolute -top-40 -left-40 w-96 h-96 bg-cyan-500/15 rounded-full blur-3xl"></div>
+    <div class="absolute top-1/3 -right-40 w-96 h-96 bg-violet-600/15 rounded-full blur-3xl"></div>
+    <div class="absolute -bottom-40 left-1/3 w-96 h-96 bg-emerald-500/15 rounded-full blur-3xl"></div>
+    <div class="absolute inset-0 bg-[radial-gradient(#1e293b_1px,transparent_1px)] [background-size:24px_24px] opacity-40"></div>
+  </div>
+
+  <!-- Header / Navigation Bar -->
+  <header class="sticky top-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80 transition-all duration-300" id="navbar">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <a href="#hero" class="flex items-center gap-3 group">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 via-teal-400 to-indigo-500 flex items-center justify-center font-bold text-slate-950 text-lg shadow-lg shadow-cyan-500/20 group-hover:scale-105 transition-transform">
+          BM
+        </div>
+        <div class="flex flex-col">
+          <span class="font-bold text-lg tracking-tight group-hover:text-cyan-400 transition-colors">Bhargavi Marturi</span>
+          <span class="text-xs text-slate-400 font-mono">B.Tech IoT & Cybersecurity</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+        <a href="#about" class="hover:text-cyan-400 transition-colors">About</a>
+        <a href="#experience" class="hover:text-cyan-400 transition-colors">Experience</a>
+        <a href="#projects" class="hover:text-cyan-400 transition-colors">Projects</a>
+        <a href="#skills" class="hover:text-cyan-400 transition-colors">Skills</a>
+        <a href="#education" class="hover:text-cyan-400 transition-colors">Education</a>
+        <a href="#certifications" class="hover:text-cyan-400 transition-colors">Certifications</a>
+        <a href="#contact" class="hover:text-cyan-400 transition-colors">Contact</a>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="hidden md:flex items-center gap-4">
+        <!-- Live Chat Demo Quick Button -->
+        <a href="#project-demo" class="px-4 py-2 rounded-lg bg-slate-800/80 hover:bg-slate-700/80 border border-slate-700 text-xs font-semibold text-cyan-400 flex items-center gap-2 hover:border-cyan-500/50 transition-all">
+          <i class="fa-solid fa-robot"></i> Agri Bot Demo
+        </a>
+
+        <!-- Resume Modal Trigger -->
+        <button onclick="openResumeModal()" class="px-4 py-2 rounded-lg bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-slate-950 font-semibold text-xs shadow-md shadow-cyan-500/25 transition-all flex items-center gap-2 hover:scale-105 active:scale-95">
+          <i class="fa-solid fa-file-lines"></i> View Resume
+        </button>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <div class="flex items-center md:hidden gap-3">
+        <button onclick="openResumeModal()" class="px-3 py-1.5 rounded-lg bg-cyan-500 text-slate-950 font-semibold text-xs">
+          Resume
+        </button>
+        <button id="mobileMenuBtn" aria-label="Toggle Navigation Menu" class="p-2 rounded-lg bg-slate-900 border border-slate-800 text-slate-300 hover:text-white focus:outline-none">
+          <i class="fa-solid fa-bars text-xl" id="menuIcon"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobileMenu" class="hidden md:hidden bg-slate-950/95 border-b border-slate-800 px-6 py-6 transition-all duration-300">
+      <nav class="flex flex-col gap-4 text-slate-300 font-medium">
+        <a href="#about" class="mobile-link py-2 hover:text-cyan-400 transition-colors border-b border-slate-800/50">About</a>
+        <a href="#experience" class="mobile-link py-2 hover:text-cyan-400 transition-colors border-b border-slate-800/50">Experience</a>
+        <a href="#projects" class="mobile-link py-2 hover:text-cyan-400 transition-colors border-b border-slate-800/50">Projects</a>
+        <a href="#skills" class="mobile-link py-2 hover:text-cyan-400 transition-colors border-b border-slate-800/50">Skills</a>
+        <a href="#education" class="mobile-link py-2 hover:text-cyan-400 transition-colors border-b border-slate-800/50">Education</a>
+        <a href="#certifications" class="mobile-link py-2 hover:text-cyan-400 transition-colors border-b border-slate-800/50">Certifications</a>
+        <a href="#contact" class="mobile-link py-2 hover:text-cyan-400 transition-colors">Contact</a>
+      </nav>
+      <div class="mt-6 flex flex-col gap-3">
+        <a href="#project-demo" class="mobile-link w-full py-2.5 rounded-lg bg-slate-800 text-center text-xs font-semibold text-cyan-400 border border-slate-700 flex items-center justify-center gap-2">
+          <i class="fa-solid fa-robot"></i> Test Agri-Bot AI
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="relative z-10">
+    <!-- Hero Section -->
+    <section id="hero" class="min-h-[92vh] flex items-center justify-center pt-10 pb-20 px-4 sm:px-6 lg:px-8">
+      <div class="max-w-6xl mx-auto w-full">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          <!-- Hero Text -->
+          <div class="lg:col-span-7 flex flex-col items-start text-left space-y-6">
+            
+            <!-- Availability Badge -->
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-cyan-950/60 border border-cyan-800/60 text-cyan-300 text-xs font-medium tracking-wide">
+              <span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
+              Open for Internships & Full-Time Opportunities (Graduating 2026)
+            </div>
+
+            <!-- Main Heading -->
+            <div>
+              <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white leading-tight">
+                Hi, I'm <span class="bg-gradient-to-r from-cyan-400 via-teal-300 to-indigo-400 bg-clip-text text-transparent">Bhargavi Marturi</span>
+              </h1>
+              <div class="h-12 mt-2 flex items-center">
+                <span class="text-xl sm:text-2xl font-mono text-slate-300">I build </span>
+                <span id="typewriter" class="text-xl sm:text-2xl font-mono font-bold text-cyan-400 ml-2 border-r-2 border-cyan-400 pr-1"></span>
+              </div>
+            </div>
+
+            <!-- Elevator Pitch -->
+            <p class="text-slate-300 text-base sm:text-lg leading-relaxed max-w-2xl">
+              B.Tech student specialized in <strong class="text-white">Internet of Things, Cybersecurity & Blockchain</strong> at PACE Institute of Technology & Sciences with an <span class="text-cyan-400 font-semibold">8.12 CGPA</span>. Experienced in real-time AI security systems at <strong class="text-white">DRDO</strong>, and creator of the NLP-driven <strong class="text-white">Agri Chatbot</strong>.
+            </p>
+
+            <!-- Key Quick Metrics -->
+            <div class="grid grid-cols-3 gap-4 w-full max-w-lg py-2">
+              <div class="p-3 rounded-xl bg-slate-900/60 border border-slate-800">
+                <div class="text-2xl font-bold text-cyan-400">8.12</div>
+                <div class="text-xs text-slate-400 font-medium">B.Tech CGPA</div>
+              </div>
+              <div class="p-3 rounded-xl bg-slate-900/60 border border-slate-800">
+                <div class="text-2xl font-bold text-teal-400">DRDO</div>
+                <div class="text-xs text-slate-400 font-medium">Research Intern</div>
+              </div>
+              <div class="p-3 rounded-xl bg-slate-900/60 border border-slate-800">
+                <div class="text-2xl font-bold text-indigo-400">600/600</div>
+                <div class="text-xs text-slate-400 font-medium">10th Board (100%)</div>
+              </div>
+            </div>
+
+            <!-- Call to Actions -->
+            <div class="flex flex-wrap gap-3.5 pt-2 w-full sm:w-auto items-center">
+              <a href="#projects" class="px-5 py-3 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-slate-950 font-bold text-sm shadow-lg shadow-cyan-500/25 flex items-center justify-center gap-2 hover:scale-105 active:scale-95 transition-all">
+                <i class="fa-solid fa-code"></i> View Projects
+              </a>
+              <button onclick="openResumeModal()" class="px-5 py-3 rounded-xl bg-slate-900 hover:bg-slate-800 border border-cyan-500/40 hover:border-cyan-400 text-cyan-300 font-semibold text-sm flex items-center justify-center gap-2 hover:scale-105 active:scale-95 transition-all">
+                <i class="fa-solid fa-file-invoice"></i> View Resume
+              </button>
+              <a href="#contact" class="px-5 py-3 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-700 hover:border-slate-500 text-slate-200 font-semibold text-sm flex items-center justify-center gap-2 transition-all">
+                <i class="fa-regular fa-paper-plane"></i> Get in Touch
+              </a>
+              <a href="mailto:bhargavimarturi3@gmail.com" class="p-3 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-700 text-cyan-400 hover:text-white transition-colors" title="Send Email">
+                <i class="fa-solid fa-envelope text-base"></i>
+              </a>
+              <a href="tel:+917702793953" class="p-3 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-700 text-emerald-400 hover:text-white transition-colors" title="Call Bhargavi">
+                <i class="fa-solid fa-phone text-base"></i>
+              </a>
+            </div>
+
+          </div>
+
+          <!-- Hero Visual / Cyber Card -->
+          <div class="lg:col-span-5 flex justify-center">
+            <div class="relative w-full max-w-md">
+              <!-- Glow backdrop -->
+              <div class="absolute -inset-1.5 bg-gradient-to-r from-cyan-500 to-indigo-600 rounded-3xl blur opacity-30 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
+              
+              <div class="relative rounded-2xl bg-slate-900/90 border border-slate-800 p-6 sm:p-8 backdrop-blur-xl shadow-2xl">
+                <!-- Terminal Header -->
+                <div class="flex items-center justify-between pb-4 border-b border-slate-800 mb-6">
+                  <div class="flex items-center gap-2">
+                    <span class="w-3 h-3 rounded-full bg-red-500/80"></span>
+                    <span class="w-3 h-3 rounded-full bg-yellow-500/80"></span>
+                    <span class="w-3 h-3 rounded-full bg-green-500/80"></span>
+                  </div>
+                  <span class="text-xs font-mono text-slate-500">engineer-profile.json</span>
+                  <i class="fa-solid fa-shield-halved text-cyan-400 text-sm"></i>
+                </div>
+
+                <!-- Profile Code Card Content -->
+                <div class="space-y-4 font-mono text-xs sm:text-sm">
+                  <div>
+                    <span class="text-slate-500">// Candidate Snapshot</span>
+                  </div>
+                  <div>
+                    <span class="text-purple-400">const</span> <span class="text-cyan-400">candidate</span> = {
+                  </div>
+                  <div class="pl-4 space-y-1 text-slate-300">
+                    <div>name: <span class="text-emerald-400">'Bhargavi Marturi'</span>,</div>
+                    <div>degree: <span class="text-emerald-400">'B.Tech (IoT & Cybersecurity)'</span>,</div>
+                    <div>cgpa: <span class="text-amber-400">8.12</span>,</div>
+                    <div>internship: <span class="text-emerald-400">'DRDO (DLRL Hyderabad)'</span>,</div>
+                    <div>focus: [<span class="text-cyan-300">'AI/NLP'</span>, <span class="text-cyan-300">'Cybersecurity'</span>, <span class="text-cyan-300">'IoT'</span>],</div>
+                    <div>certifications: [</div>
+                    <div class="pl-4 text-emerald-300">'IBM Python for Data Science',</div>
+                    <div class="pl-4 text-emerald-300">'Cyber Security Foundations'</div>
+                    <div>],</div>
+                    <div>status: <span class="text-teal-300">'Available to innovate'</span></div>
+                  </div>
+                  <div>};</div>
+                </div>
+
+                <!-- Interactive Terminal Execution Pill -->
+                <div class="mt-6 pt-4 border-t border-slate-800/80 flex items-center justify-between text-xs font-mono">
+                  <div class="flex items-center gap-2 text-emerald-400">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <span>System Status: Optimal</span>
+                  </div>
+                  <span class="text-slate-500">2026 Batch</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Career Objective & About Section -->
+    <section id="about" class="py-20 px-4 sm:px-6 lg:px-8 bg-slate-900/40 border-y border-slate-800/60">
+      <div class="max-w-6xl mx-auto">
+        <div class="flex flex-col items-center text-center mb-12">
+          <span class="text-cyan-400 font-mono text-sm tracking-wider uppercase font-semibold">Get To Know Me</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2">Career Objective & About</h2>
+          <div class="w-16 h-1 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full mt-3"></div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+          
+          <!-- Career Objective Highlight Box -->
+          <div class="lg:col-span-7 bg-gradient-to-br from-slate-900 to-slate-950 p-8 rounded-2xl border border-slate-800 flex flex-col justify-between shadow-xl relative overflow-hidden">
+            <div class="absolute -top-12 -right-12 w-48 h-48 bg-cyan-500/10 rounded-full blur-2xl"></div>
+            <div>
+              <div class="flex items-center gap-3 text-cyan-400 mb-4">
+                <i class="fa-solid fa-bullseye text-2xl"></i>
+                <h3 class="text-xl font-bold text-white">Career Objective</h3>
+              </div>
+              <blockquote class="text-slate-300 text-lg sm:text-xl font-normal leading-relaxed italic border-l-4 border-cyan-500 pl-4 py-1">
+                "To secure a challenging position where I can apply my skills, learn new technologies, and contribute to the growth of the organization while developing myself professionally."
+              </blockquote>
+              <p class="text-slate-400 mt-6 leading-relaxed text-sm sm:text-base">
+                As a passionate technologist rooted in IoT, Cybersecurity, and Blockchain, I thrive at the crossroads of cutting-edge artificial intelligence and dependable, secure software engineering. My experience at DRDO instilled a strong foundation in real-time defense computing, high-assurance security implementations, and disciplined execution.
+              </p>
+            </div>
+
+            <!-- Soft Strengths Pills -->
+            <div class="mt-8 pt-6 border-t border-slate-800/80">
+              <h4 class="text-xs uppercase font-mono tracking-wider text-slate-400 mb-3">Core Professional Strengths</h4>
+              <div class="flex flex-wrap gap-2.5">
+                <span class="px-3 py-1.5 rounded-lg bg-cyan-950/80 border border-cyan-800/70 text-cyan-300 text-xs font-semibold flex items-center gap-2">
+                  <i class="fa-solid fa-bolt text-cyan-400"></i> Quick Learner
+                </span>
+                <span class="px-3 py-1.5 rounded-lg bg-teal-950/80 border border-teal-800/70 text-teal-300 text-xs font-semibold flex items-center gap-2">
+                  <i class="fa-solid fa-comments text-teal-400"></i> Clear Communicator
+                </span>
+                <span class="px-3 py-1.5 rounded-lg bg-blue-950/80 border border-blue-800/70 text-blue-300 text-xs font-semibold flex items-center gap-2">
+                  <i class="fa-solid fa-clock text-blue-400"></i> Time Management
+                </span>
+                <span class="px-3 py-1.5 rounded-lg bg-indigo-950/80 border border-indigo-800/70 text-indigo-300 text-xs font-semibold flex items-center gap-2">
+                  <i class="fa-solid fa-users text-indigo-400"></i> Collaborative Leadership
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Highlights & Leadership -->
+          <div class="lg:col-span-5 flex flex-col gap-6">
+            <!-- Leadership Card 1: NSS Coordinator -->
+            <div class="bg-slate-900/90 border border-slate-800 p-6 rounded-2xl flex items-start gap-4 hover:border-slate-700 transition-all">
+              <div class="w-12 h-12 rounded-xl bg-orange-500/10 border border-orange-500/20 text-orange-400 flex items-center justify-center text-xl shrink-0">
+                <i class="fa-solid fa-hand-holding-heart"></i>
+              </div>
+              <div>
+                <span class="text-xs font-mono text-orange-400 font-semibold uppercase">Leadership & Service</span>
+                <h4 class="text-lg font-bold text-white mt-0.5">NSS Coordinator</h4>
+                <p class="text-slate-400 text-xs mt-1">PACE Institute of Technology and Sciences</p>
+                <p class="text-slate-300 text-sm mt-2">
+                  Coordinated national service scheme initiatives, organized community outreach programs, health camps, and student volunteer drives.
+                </p>
+              </div>
+            </div>
+
+            <!-- Leadership Card 2: Health Watch Committee -->
+            <div class="bg-slate-900/90 border border-slate-800 p-6 rounded-2xl flex items-start gap-4 hover:border-slate-700 transition-all">
+              <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 flex items-center justify-center text-xl shrink-0">
+                <i class="fa-solid fa-shield-virus"></i>
+              </div>
+              <div>
+                <span class="text-xs font-mono text-emerald-400 font-semibold uppercase">Institutional Governance</span>
+                <h4 class="text-lg font-bold text-white mt-0.5">Health Watch Committee Member</h4>
+                <p class="text-slate-400 text-xs mt-1">PACE Institute of Technology and Sciences</p>
+                <p class="text-slate-300 text-sm mt-2">
+                  Active member monitoring campus health protocols, organizing wellness awareness workshops, and managing student health safety reporting.
+                </p>
+              </div>
+            </div>
+
+            <!-- Contact snippet -->
+            <div class="bg-slate-900/90 border border-cyan-900/40 p-5 rounded-2xl flex items-center justify-between">
+              <div>
+                <div class="text-xs text-slate-400">Direct Contact</div>
+                <div class="text-sm font-semibold text-white">Ongole / Hyderabad, India</div>
+              </div>
+              <a href="tel:+917702793953" class="text-cyan-400 hover:text-cyan-300 text-sm font-mono flex items-center gap-1 font-semibold">
+                +91 7702793953 <i class="fa-solid fa-arrow-up-right-from-square text-xs ml-1"></i>
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience / Internship Section -->
+    <section id="experience" class="py-20 px-4 sm:px-6 lg:px-8">
+      <div class="max-w-6xl mx-auto">
+        <div class="flex flex-col items-center text-center mb-12">
+          <span class="text-cyan-400 font-mono text-sm tracking-wider uppercase font-semibold">Professional Exposure</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2">Work Experience & Internship</h2>
+          <div class="w-16 h-1 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full mt-3"></div>
+        </div>
+
+        <div class="relative">
+          <!-- Experience Card -->
+          <div class="relative rounded-2xl bg-gradient-to-b from-slate-900 to-slate-950 border border-slate-800 p-8 sm:p-10 shadow-2xl overflow-hidden hover:border-cyan-500/40 transition-all duration-300">
+            <!-- Glow Accent -->
+            <div class="absolute top-0 right-0 w-80 h-80 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+            <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-6 border-b border-slate-800">
+              <div class="flex items-center gap-4">
+                <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-cyan-500 to-blue-600 flex items-center justify-center text-slate-950 font-extrabold text-2xl shadow-lg shadow-cyan-500/20">
+                  <i class="fa-solid fa-shield"></i>
+                </div>
+                <div>
+                  <div class="flex items-center gap-3 flex-wrap">
+                    <h3 class="text-2xl font-bold text-white">AI Technologies Intern</h3>
+                    <span class="px-2.5 py-1 rounded-md bg-cyan-950 border border-cyan-700/60 text-cyan-300 text-xs font-mono font-semibold">
+                      DLRL, DRDO
+                    </span>
+                  </div>
+                  <p class="text-slate-400 text-sm mt-1">
+                    Defense Electronics Research Laboratory (DLRL), DRDO &bull; Hyderabad, India
+                  </p>
+                </div>
+              </div>
+              <div class="text-left md:text-right">
+                <span class="inline-block px-3 py-1 rounded-lg bg-slate-800 text-slate-300 font-mono text-xs font-medium">
+                  <i class="fa-regular fa-calendar-check mr-1.5 text-cyan-400"></i> Research Internship
+                </span>
+              </div>
+            </div>
+
+            <!-- Details -->
+            <div class="mt-6 space-y-4">
+              <p class="text-slate-300 leading-relaxed text-base italic bg-slate-950/60 p-4 rounded-xl border border-slate-800/80">
+                &ldquo;Completed internship at DRDO focusing on AI technologies and basic security implementations, gaining exposure to real-time systems.&rdquo;
+              </p>
+
+              <h4 class="text-sm font-semibold uppercase tracking-wider text-slate-400 font-mono pt-2">Key Contributions & Highlights:</h4>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="p-4 rounded-xl bg-slate-950/40 border border-slate-800/70 flex items-start gap-3">
+                  <i class="fa-solid fa-microchip text-cyan-400 text-lg mt-1 shrink-0"></i>
+                  <div>
+                    <h5 class="text-white font-semibold text-sm">Real-time Defense Systems Exposure</h5>
+                    <p class="text-slate-400 text-xs mt-1">Observed and analyzed how real-time electronic defense architectures handle low-latency processing and mission-critical telemetry.</p>
+                  </div>
+                </div>
+
+                <div class="p-4 rounded-xl bg-slate-950/40 border border-slate-800/70 flex items-start gap-3">
+                  <i class="fa-solid fa-lock text-cyan-400 text-lg mt-1 shrink-0"></i>
+                  <div>
+                    <h5 class="text-white font-semibold text-sm">Security Implementations</h5>
+                    <p class="text-slate-400 text-xs mt-1">Studied baseline cryptography, access control policies, and defensive system hardening for embedded and computing platforms.</p>
+                  </div>
+                </div>
+
+                <div class="p-4 rounded-xl bg-slate-950/40 border border-slate-800/70 flex items-start gap-3">
+                  <i class="fa-solid fa-brain text-cyan-400 text-lg mt-1 shrink-0"></i>
+                  <div>
+                    <h5 class="text-white font-semibold text-sm">AI Technology Integration</h5>
+                    <p class="text-slate-400 text-xs mt-1">Explored artificial intelligence and machine learning pipelines applied to automated decision support and pattern detection.</p>
+                  </div>
+                </div>
+
+                <div class="p-4 rounded-xl bg-slate-950/40 border border-slate-800/70 flex items-start gap-3">
+                  <i class="fa-solid fa-network-wired text-cyan-400 text-lg mt-1 shrink-0"></i>
+                  <div>
+                    <h5 class="text-white font-semibold text-sm">High Reliability & Compliance</h5>
+                    <p class="text-slate-400 text-xs mt-1">Gained disciplined understanding of defense software lifecycles, rigorous documentation, and secure coding practices.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Tech Pills -->
+              <div class="pt-4 flex flex-wrap gap-2 items-center">
+                <span class="text-xs font-mono text-slate-500 mr-2">Domain Focus:</span>
+                <span class="px-2.5 py-1 rounded bg-slate-800 text-slate-300 text-xs font-mono">Artificial Intelligence</span>
+                <span class="px-2.5 py-1 rounded bg-slate-800 text-slate-300 text-xs font-mono">Real-Time Systems</span>
+                <span class="px-2.5 py-1 rounded bg-slate-800 text-slate-300 text-xs font-mono">Defense Security</span>
+                <span class="px-2.5 py-1 rounded bg-slate-800 text-slate-300 text-xs font-mono">DLRL DRDO</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 px-4 sm:px-6 lg:px-8 bg-slate-900/40 border-y border-slate-800/60">
+      <div class="max-w-6xl mx-auto">
+        <div class="flex flex-col items-center text-center mb-12">
+          <span class="text-cyan-400 font-mono text-sm tracking-wider uppercase font-semibold">Featured Work</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2">Projects & Innovations</h2>
+          <div class="w-16 h-1 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full mt-3"></div>
+          <p class="text-slate-400 text-sm max-w-xl mt-3">
+            Applying Artificial Intelligence, Natural Language Processing, and Secure Systems to real-world problems.
+          </p>
+        </div>
+
+        <!-- Flagship Project Card: AGRI CHAT-BOT USING NLP -->
+        <div class="rounded-3xl bg-gradient-to-b from-slate-900 via-slate-900/90 to-slate-950 border border-cyan-500/30 p-8 sm:p-10 shadow-2xl relative overflow-hidden mb-12">
+          <div class="absolute -top-16 -right-16 w-80 h-80 bg-cyan-500/15 rounded-full blur-3xl pointer-events-none"></div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            <div class="lg:col-span-7 space-y-5">
+              <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-950/80 border border-emerald-700/60 text-emerald-300 text-xs font-mono">
+                <i class="fa-solid fa-seedling"></i> Flagship AI & NLP Project
+              </div>
+
+              <h3 class="text-3xl font-extrabold text-white tracking-tight">
+                AGRI CHAT-BOT USING NLP
+              </h3>
+
+              <p class="text-slate-300 text-base leading-relaxed">
+                Developed an AI-powered Agri Chatbot using <strong class="text-white">Python</strong> and <strong class="text-white">Natural Language Processing</strong> to provide farmers with real-time agricultural guidance, intelligent crop suggestions, fertilizer recommendations, and smart farming assistance.
+              </p>
+
+              <!-- Technical stack tags -->
+              <div class="flex flex-wrap gap-2 pt-1">
+                <span class="px-3 py-1 rounded-lg bg-slate-800 text-cyan-300 text-xs font-mono font-medium border border-slate-700">
+                  <i class="fa-brands fa-python mr-1"></i> Python
+                </span>
+                <span class="px-3 py-1 rounded-lg bg-slate-800 text-teal-300 text-xs font-mono font-medium border border-slate-700">
+                  <i class="fa-solid fa-brain mr-1"></i> NLTK
+                </span>
+                <span class="px-3 py-1 rounded-lg bg-slate-800 text-indigo-300 text-xs font-mono font-medium border border-slate-700">
+                  <i class="fa-solid fa-vector-square mr-1"></i> Sentence-Transformers
+                </span>
+                <span class="px-3 py-1 rounded-lg bg-slate-800 text-amber-300 text-xs font-mono font-medium border border-slate-700">
+                  <i class="fa-solid fa-desktop mr-1"></i> Gradio UI
+                </span>
+              </div>
+
+              <!-- Feature bullets -->
+              <div class="space-y-2.5 pt-2 text-sm text-slate-300">
+                <div class="flex items-center gap-2.5">
+                  <i class="fa-solid fa-circle-check text-cyan-400 text-xs"></i>
+                  <span><strong>Semantic Understanding:</strong> Utilizes Sentence-Transformers to map farmer queries to domain knowledge embeddings.</span>
+                </div>
+                <div class="flex items-center gap-2.5">
+                  <i class="fa-solid fa-circle-check text-cyan-400 text-xs"></i>
+                  <span><strong>Real-Time Guidance:</strong> Immediate diagnosis of crop symptoms, soil requirements, and seasonal recommendations.</span>
+                </div>
+                <div class="flex items-center gap-2.5">
+                  <i class="fa-solid fa-circle-check text-cyan-400 text-xs"></i>
+                  <span><strong>Interactive Gradio Interface:</strong> Designed an intuitive, frictionless conversational UI accessible to non-technical users.</span>
+                </div>
+              </div>
+
+              <div class="pt-4 flex flex-wrap gap-4">
+                <a href="#project-demo" class="px-5 py-2.5 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold text-xs shadow-md shadow-cyan-500/30 flex items-center gap-2 transition-all">
+                  <i class="fa-solid fa-play"></i> Try Interactive Demo Below
+                </a>
+                <button onclick="openAgriDetailsModal()" class="px-5 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold text-xs border border-slate-700 flex items-center gap-2 transition-all">
+                  <i class="fa-solid fa-circle-info"></i> Architecture Details
+                </button>
+              </div>
+            </div>
+
+            <!-- Project Graphic / Mockup -->
+            <div class="lg:col-span-5">
+              <div class="rounded-2xl bg-slate-950/80 border border-slate-800 p-5 shadow-inner">
+                <!-- Chat Window Mockup -->
+                <div class="flex items-center justify-between pb-3 border-b border-slate-800 text-xs text-slate-400 font-mono">
+                  <div class="flex items-center gap-2">
+                    <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-ping"></span>
+                    <span class="text-white font-semibold">Agri-Chatbot AI</span>
+                  </div>
+                  <span class="text-cyan-400">Gradio v4.x</span>
+                </div>
+
+                <div class="py-4 space-y-3 font-sans text-xs">
+                  <!-- Farmer prompt -->
+                  <div class="flex items-start gap-2 justify-end">
+                    <div class="bg-cyan-600/30 border border-cyan-500/40 text-cyan-200 p-3 rounded-2xl rounded-tr-none max-w-xs">
+                      "My paddy leaves are turning yellow with brown spots. What should I spray?"
+                    </div>
+                  </div>
+
+                  <!-- Bot response -->
+                  <div class="flex items-start gap-2">
+                    <div class="w-7 h-7 rounded-lg bg-emerald-500 flex items-center justify-center text-slate-950 text-xs shrink-0 font-bold">
+                      <i class="fa-solid fa-seedling"></i>
+                    </div>
+                    <div class="bg-slate-900 border border-slate-800 text-slate-200 p-3 rounded-2xl rounded-tl-none max-w-xs space-y-2">
+                      <p class="font-semibold text-emerald-400">Detected: Brown Spot / Leaf Blight</p>
+                      <p class="text-slate-300">Recommended Action: Apply Propiconazole 25% EC (1ml/L) or Mancozeb. Ensure proper nitrogen balance and drainage.</p>
+                      <div class="text-[10px] font-mono text-cyan-400 pt-1">Confidence: 94.8% &bull; Latency: 42ms</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="pt-3 border-t border-slate-800 flex items-center justify-between text-[11px] font-mono text-slate-400">
+                  <span>Input: Multi-lingual NLTK</span>
+                  <span class="text-emerald-400"><i class="fa-solid fa-check-double"></i> Ready</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Additional Projects Grid (Complementing her IoT & Cybersecurity degree) -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          
+          <!-- Project 2: IoT Sensor Telemetry & Blockchain -->
+          <div class="rounded-2xl bg-slate-900/80 border border-slate-800 p-6 flex flex-col justify-between hover:border-slate-700 transition-all">
+            <div class="space-y-4">
+              <div class="flex items-center justify-between">
+                <span class="w-10 h-10 rounded-xl bg-violet-500/10 text-violet-400 flex items-center justify-center text-lg">
+                  <i class="fa-solid fa-cubes"></i>
+                </span>
+                <span class="text-xs font-mono text-slate-400">IoT &amp; Security</span>
+              </div>
+              <h4 class="text-xl font-bold text-white">Smart IoT Telemetry &amp; Blockchain Ledger</h4>
+              <p class="text-slate-300 text-sm leading-relaxed">
+                Conceptualized and built a secure IoT sensor telemetry logger that captures environmental metrics and logs cryptographic block hashes to prevent data tampering across distributed agricultural nodes.
+              </p>
+              <div class="flex flex-wrap gap-2 pt-2">
+                <span class="px-2.5 py-1 rounded bg-slate-800 text-slate-300 text-xs font-mono">IoT Sensors</span>
+                <span class="px-2.5 py-1 rounded bg-slate-800 text-slate-300 text-xs font-mono">Blockchain</span>
+                <span class="px-2.5 py-1 rounded bg-slate-800 text-slate-300 text-xs font-mono">SHA-256</span>
+                <span class="px-2.5 py-1 rounded bg-slate-800 text-slate-300 text-xs font-mono">Python</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3: Django Web App & MySQL -->
+          <div class="rounded-2xl bg-slate-900/80 border border-slate-800 p-6 flex flex-col justify-between hover:border-slate-700 transition-all">
+            <div class="space-y-4">
+              <div class="flex items-center justify-between">
+                <span class="w-10 h-10 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-lg">
+                  <i class="fa-brands fa-python"></i>
+                </span>
+                <span class="text-xs font-mono text-slate-400">Full-Stack Framework</span>
+              </div>
+              <h4 class="text-xl font-bold text-white">Full-Stack Django &amp; MySQL Web Portal</h4>
+              <p class="text-slate-300 text-sm leading-relaxed">
+                Developed an authenticated web management portal utilizing Django framework with secure session management, relational MySQL schema design, and modular MVC architecture for streamlined data administration.
+              </p>
+              <div class="flex flex-wrap gap-2 pt-2">
+                <span class="px-2.5 py-1 rounded bg-slate-800 text-slate-300 text-xs font-mono">Django</span>
+                <span class="px-2.5 py-1 rounded bg-slate-800 text-slate-300 text-xs font-mono">MySQL</span>
+                <span class="px-2.5 py-1 rounded bg-slate-800 text-slate-300 text-xs font-mono">HTML/CSS</span>
+                <span class="px-2.5 py-1 rounded bg-slate-800 text-slate-300 text-xs font-mono">JavaScript</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Interactive Agri-Bot Live Simulator -->
+        <div id="project-demo" class="mt-12 rounded-3xl bg-gradient-to-r from-slate-900 via-slate-950 to-slate-900 border border-cyan-500/40 p-6 sm:p-8 shadow-2xl">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-6 border-b border-slate-800">
+            <div>
+              <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-950/80 text-cyan-300 text-xs font-mono mb-2">
+                <span class="w-2 h-2 rounded-full bg-cyan-400 animate-ping"></span> Live Interactive Simulator
+              </div>
+              <h3 class="text-2xl font-bold text-white">Experience the Agri Chatbot</h3>
+              <p class="text-slate-400 text-xs sm:text-sm mt-1">Try querying the NLP model with sample farmer queries or type your own question!</p>
+            </div>
+            
+            <!-- Quick prompt chips -->
+            <div class="flex flex-wrap gap-2">
+              <button onclick="sendAgriPrompt('What crop is best for black soil in summer?')" class="text-xs px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 border border-slate-700 hover:border-cyan-400 transition-colors">
+                🌱 Best crop for black soil?
+              </button>
+              <button onclick="sendAgriPrompt('How to prevent tomato leaf curl virus?')" class="text-xs px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 border border-slate-700 hover:border-cyan-400 transition-colors">
+                🍅 Tomato leaf curl cure?
+              </button>
+              <button onclick="sendAgriPrompt('What fertilizer ratio for paddy nursery?')" class="text-xs px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 border border-slate-700 hover:border-cyan-400 transition-colors">
+                🌾 Fertilizer for paddy?
+              </button>
+            </div>
+          </div>
+
+          <!-- Chat Messages Area -->
+          <div id="agriChatBox" class="h-64 overflow-y-auto my-4 p-4 rounded-2xl bg-slate-950/70 border border-slate-800 space-y-4 text-sm font-sans">
+            <div class="flex items-start gap-3">
+              <div class="w-8 h-8 rounded-lg bg-cyan-500 text-slate-950 flex items-center justify-center font-bold text-sm shrink-0">
+                <i class="fa-solid fa-robot"></i>
+              </div>
+              <div class="bg-slate-900 border border-slate-800 p-3.5 rounded-2xl rounded-tl-none max-w-lg text-slate-200">
+                Namaste! I am the <strong>AI Agri-Bot</strong> built by Bhargavi Marturi. Ask me anything about crop suggestions, soil care, pest identification, or fertilizers!
+              </div>
+            </div>
+          </div>
+
+          <!-- Input Box -->
+          <form id="agriChatForm" onsubmit="handleAgriSubmit(event)" class="flex gap-2">
+            <input 
+              type="text" 
+              id="agriInput" 
+              placeholder="Ask an agricultural or crop care question..." 
+              class="flex-1 bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-cyan-400 placeholder:text-slate-500"
+            />
+            <button type="submit" class="px-5 py-3 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold text-sm flex items-center gap-2 shadow-lg shadow-cyan-500/20 transition-all">
+              <span>Send</span> <i class="fa-solid fa-paper-plane text-xs"></i>
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Technical Skills Section -->
+    <section id="skills" class="py-20 px-4 sm:px-6 lg:px-8">
+      <div class="max-w-6xl mx-auto">
+        <div class="flex flex-col items-center text-center mb-12">
+          <span class="text-cyan-400 font-mono text-sm tracking-wider uppercase font-semibold">Technical Arsenal</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2">Skills & Technologies</h2>
+          <div class="w-16 h-1 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full mt-3"></div>
+          <p class="text-slate-400 text-sm max-w-xl mt-3">
+            Core competencies across programming, frameworks, security, and developer utilities.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          
+          <!-- Skill Card 1: Programming Languages -->
+          <div class="bg-slate-900/90 border border-slate-800 p-6 rounded-2xl hover:border-cyan-500/40 transition-all">
+            <div class="flex items-center gap-3 mb-4">
+              <div class="w-10 h-10 rounded-xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center text-lg">
+                <i class="fa-solid fa-terminal"></i>
+              </div>
+              <h3 class="text-lg font-bold text-white">Programming</h3>
+            </div>
+            <div class="space-y-3">
+              <div>
+                <div class="flex justify-between text-xs font-mono mb-1 text-slate-300">
+                  <span>Python</span>
+                  <span class="text-cyan-400">Advanced</span>
+                </div>
+                <div class="h-2 w-full bg-slate-800 rounded-full overflow-hidden">
+                  <div class="h-full bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full" style="width: 90%"></div>
+                </div>
+              </div>
+
+              <div>
+                <div class="flex justify-between text-xs font-mono mb-1 text-slate-300">
+                  <span>Java</span>
+                  <span class="text-cyan-400">Intermediate</span>
+                </div>
+                <div class="h-2 w-full bg-slate-800 rounded-full overflow-hidden">
+                  <div class="h-full bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full" style="width: 78%"></div>
+                </div>
+              </div>
+
+              <div>
+                <div class="flex justify-between text-xs font-mono mb-1 text-slate-300">
+                  <span>C Language</span>
+                  <span class="text-cyan-400">Foundational</span>
+                </div>
+                <div class="h-2 w-full bg-slate-800 rounded-full overflow-hidden">
+                  <div class="h-full bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full" style="width: 75%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill Card 2: AI / NLP & Frameworks -->
+          <div class="bg-slate-900/90 border border-slate-800 p-6 rounded-2xl hover:border-cyan-500/40 transition-all">
+            <div class="flex items-center gap-3 mb-4">
+              <div class="w-10 h-10 rounded-xl bg-teal-500/10 text-teal-400 flex items-center justify-center text-lg">
+                <i class="fa-solid fa-brain"></i>
+              </div>
+              <h3 class="text-lg font-bold text-white">AI, NLP & Frameworks</h3>
+            </div>
+            <div class="space-y-3">
+              <div>
+                <div class="flex justify-between text-xs font-mono mb-1 text-slate-300">
+                  <span>Django Framework</span>
+                  <span class="text-teal-400">Proficient</span>
+                </div>
+                <div class="h-2 w-full bg-slate-800 rounded-full overflow-hidden">
+                  <div class="h-full bg-gradient-to-r from-teal-500 to-emerald-500 rounded-full" style="width: 82%"></div>
+                </div>
+              </div>
+
+              <div>
+                <div class="flex justify-between text-xs font-mono mb-1 text-slate-300">
+                  <span>NLTK & Sentence-Transformers</span>
+                  <span class="text-teal-400">Specialized</span>
+                </div>
+                <div class="h-2 w-full bg-slate-800 rounded-full overflow-hidden">
+                  <div class="h-full bg-gradient-to-r from-teal-500 to-emerald-500 rounded-full" style="width: 85%"></div>
+                </div>
+              </div>
+
+              <div>
+                <div class="flex justify-between text-xs font-mono mb-1 text-slate-300">
+                  <span>Gradio UI Deployment</span>
+                  <span class="text-teal-400">Hands-on</span>
+                </div>
+                <div class="h-2 w-full bg-slate-800 rounded-full overflow-hidden">
+                  <div class="h-full bg-gradient-to-r from-teal-500 to-emerald-500 rounded-full" style="width: 88%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill Card 3: Web Technologies -->
+          <div class="bg-slate-900/90 border border-slate-800 p-6 rounded-2xl hover:border-cyan-500/40 transition-all">
+            <div class="flex items-center gap-3 mb-4">
+              <div class="w-10 h-10 rounded-xl bg-indigo-500/10 text-indigo-400 flex items-center justify-center text-lg">
+                <i class="fa-solid fa-globe"></i>
+              </div>
+              <h3 class="text-lg font-bold text-white">Web Technologies</h3>
+            </div>
+            <div class="space-y-3">
+              <div>
+                <div class="flex justify-between text-xs font-mono mb-1 text-slate-300">
+                  <span>HTML5 / CSS3</span>
+                  <span class="text-indigo-400">Advanced</span>
+                </div>
+                <div class="h-2 w-full bg-slate-800 rounded-full overflow-hidden">
+                  <div class="h-full bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full" style="width: 90%"></div>
+                </div>
+              </div>
+
+              <div>
+                <div class="flex justify-between text-xs font-mono mb-1 text-slate-300">
+                  <span>JavaScript</span>
+                  <span class="text-indigo-400">Intermediate</span>
+                </div>
+                <div class="h-2 w-full bg-slate-800 rounded-full overflow-hidden">
+                  <div class="h-full bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full" style="width: 78%"></div>
+                </div>
+              </div>
+
+              <div>
+                <div class="flex justify-between text-xs font-mono mb-1 text-slate-300">
+                  <span>Responsive UI & Tailwind</span>
+                  <span class="text-indigo-400">Proficient</span>
+                </div>
+                <div class="h-2 w-full bg-slate-800 rounded-full overflow-hidden">
+                  <div class="h-full bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full" style="width: 84%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill Card 4: Databases -->
+          <div class="bg-slate-900/90 border border-slate-800 p-6 rounded-2xl hover:border-cyan-500/40 transition-all">
+            <div class="flex items-center gap-3 mb-4">
+              <div class="w-10 h-10 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center text-lg">
+                <i class="fa-solid fa-database"></i>
+              </div>
+              <h3 class="text-lg font-bold text-white">Databases</h3>
+            </div>
+            <div class="space-y-3">
+              <div>
+                <div class="flex justify-between text-xs font-mono mb-1 text-slate-300">
+                  <span>MySQL</span>
+                  <span class="text-amber-400">Proficient</span>
+                </div>
+                <div class="h-2 w-full bg-slate-800 rounded-full overflow-hidden">
+                  <div class="h-full bg-gradient-to-r from-amber-500 to-orange-500 rounded-full" style="width: 85%"></div>
+                </div>
+              </div>
+
+              <div>
+                <div class="flex justify-between text-xs font-mono mb-1 text-slate-300">
+                  <span>MongoDB</span>
+                  <span class="text-amber-400">Intermediate</span>
+                </div>
+                <div class="h-2 w-full bg-slate-800 rounded-full overflow-hidden">
+                  <div class="h-full bg-gradient-to-r from-amber-500 to-orange-500 rounded-full" style="width: 75%"></div>
+                </div>
+              </div>
+
+              <div>
+                <div class="flex justify-between text-xs font-mono mb-1 text-slate-300">
+                  <span>Data Modeling & Querying</span>
+                  <span class="text-amber-400">Solid</span>
+                </div>
+                <div class="h-2 w-full bg-slate-800 rounded-full overflow-hidden">
+                  <div class="h-full bg-gradient-to-r from-amber-500 to-orange-500 rounded-full" style="width: 80%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill Card 5: Cybersecurity & IoT Blockchain -->
+          <div class="bg-slate-900/90 border border-slate-800 p-6 rounded-2xl hover:border-cyan-500/40 transition-all">
+            <div class="flex items-center gap-3 mb-4">
+              <div class="w-10 h-10 rounded-xl bg-rose-500/10 text-rose-400 flex items-center justify-center text-lg">
+                <i class="fa-solid fa-shield-halved"></i>
+              </div>
+              <h3 class="text-lg font-bold text-white">Security &amp; IoT</h3>
+            </div>
+            <div class="space-y-3">
+              <div>
+                <div class="flex justify-between text-xs font-mono mb-1 text-slate-300">
+                  <span>Cybersecurity Foundations</span>
+                  <span class="text-rose-400">Certified</span>
+                </div>
+                <div class="h-2 w-full bg-slate-800 rounded-full overflow-hidden">
+                  <div class="h-full bg-gradient-to-r from-rose-500 to-pink-500 rounded-full" style="width: 88%"></div>
+                </div>
+              </div>
+
+              <div>
+                <div class="flex justify-between text-xs font-mono mb-1 text-slate-300">
+                  <span>IoT Architectures &amp; Telemetry</span>
+                  <span class="text-rose-400">Core Focus</span>
+                </div>
+                <div class="h-2 w-full bg-slate-800 rounded-full overflow-hidden">
+                  <div class="h-full bg-gradient-to-r from-rose-500 to-pink-500 rounded-full" style="width: 85%"></div>
+                </div>
+              </div>
+
+              <div>
+                <div class="flex justify-between text-xs font-mono mb-1 text-slate-300">
+                  <span>Blockchain &amp; Smart Ledgers</span>
+                  <span class="text-rose-400">Academic Core</span>
+                </div>
+                <div class="h-2 w-full bg-slate-800 rounded-full overflow-hidden">
+                  <div class="h-full bg-gradient-to-r from-rose-500 to-pink-500 rounded-full" style="width: 80%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill Card 6: Developer Tools & Productivity -->
+          <div class="bg-slate-900/90 border border-slate-800 p-6 rounded-2xl hover:border-cyan-500/40 transition-all">
+            <div class="flex items-center gap-3 mb-4">
+              <div class="w-10 h-10 rounded-xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center text-lg">
+                <i class="fa-solid fa-wrench"></i>
+              </div>
+              <h3 class="text-lg font-bold text-white">Tools &amp; Workflows</h3>
+            </div>
+            <div class="space-y-3">
+              <div>
+                <div class="flex justify-between text-xs font-mono mb-1 text-slate-300">
+                  <span>VS Code Environment</span>
+                  <span class="text-cyan-400">Daily Driver</span>
+                </div>
+                <div class="h-2 w-full bg-slate-800 rounded-full overflow-hidden">
+                  <div class="h-full bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full" style="width: 95%"></div>
+                </div>
+              </div>
+
+              <div>
+                <div class="flex justify-between text-xs font-mono mb-1 text-slate-300">
+                  <span>Git &amp; GitHub</span>
+                  <span class="text-cyan-400">Proficient</span>
+                </div>
+                <div class="h-2 w-full bg-slate-800 rounded-full overflow-hidden">
+                  <div class="h-full bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full" style="width: 85%"></div>
+                </div>
+              </div>
+
+              <div>
+                <div class="flex justify-between text-xs font-mono mb-1 text-slate-300">
+                  <span>Microsoft Excel &amp; Data Analysis</span>
+                  <span class="text-cyan-400">Skilled</span>
+                </div>
+                <div class="h-2 w-full bg-slate-800 rounded-full overflow-hidden">
+                  <div class="h-full bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full" style="width: 82%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Timeline Section -->
+    <section id="education" class="py-20 px-4 sm:px-6 lg:px-8 bg-slate-900/40 border-y border-slate-800/60">
+      <div class="max-w-6xl mx-auto">
+        <div class="flex flex-col items-center text-center mb-12">
+          <span class="text-cyan-400 font-mono text-sm tracking-wider uppercase font-semibold">Academic Journey</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2">Education & Qualifications</h2>
+          <div class="w-16 h-1 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full mt-3"></div>
+        </div>
+
+        <div class="relative border-l-2 border-slate-800 ml-4 md:ml-32 space-y-12">
+          
+          <!-- Item 1: B.Tech -->
+          <div class="relative pl-8 group">
+            <!-- Timeline dot -->
+            <div class="absolute -left-[17px] top-1.5 w-8 h-8 rounded-full bg-slate-950 border-2 border-cyan-400 flex items-center justify-center group-hover:scale-110 transition-transform">
+              <div class="w-2.5 h-2.5 rounded-full bg-cyan-400"></div>
+            </div>
+
+            <div class="bg-slate-900/90 border border-slate-800 p-6 sm:p-8 rounded-2xl group-hover:border-cyan-500/40 transition-all shadow-xl">
+              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-2">
+                <span class="px-3 py-1 rounded-md bg-cyan-950/80 border border-cyan-700/60 text-cyan-300 text-xs font-mono font-semibold inline-block w-fit">
+                  2022 &ndash; 2026 (Expected)
+                </span>
+                <span class="text-cyan-400 font-bold font-mono text-sm">CGPA: 8.12 / 10</span>
+              </div>
+              <h3 class="text-xl sm:text-2xl font-bold text-white">
+                Bachelor of Technology in Internet of Things and Cybersecurity Blockchain
+              </h3>
+              <p class="text-slate-300 font-medium text-sm mt-1">
+                PACE Institute of Technology and Sciences, Valluru
+              </p>
+              <p class="text-slate-400 text-sm mt-3 leading-relaxed">
+                Specialized coursework in Distributed Systems, Computer Networks, Cryptography & Network Security, Embedded IoT Systems, Blockchain Smart Contracts, Artificial Intelligence, and Object-Oriented Software Engineering.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 2: Intermediate MPC -->
+          <div class="relative pl-8 group">
+            <div class="absolute -left-[17px] top-1.5 w-8 h-8 rounded-full bg-slate-950 border-2 border-slate-600 flex items-center justify-center group-hover:scale-110 transition-transform">
+              <div class="w-2.5 h-2.5 rounded-full bg-slate-400"></div>
+            </div>
+
+            <div class="bg-slate-900/90 border border-slate-800 p-6 sm:p-8 rounded-2xl group-hover:border-slate-700 transition-all shadow-xl">
+              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-2">
+                <span class="px-3 py-1 rounded-md bg-slate-800 text-slate-300 text-xs font-mono font-semibold inline-block w-fit">
+                  2020 &ndash; 2022
+                </span>
+                <span class="text-teal-400 font-bold font-mono text-sm">Marks: 762 / 1000</span>
+              </div>
+              <h3 class="text-xl font-bold text-white">
+                Board of Intermediate - MPC (Maths, Physics, Chemistry)
+              </h3>
+              <p class="text-slate-300 font-medium text-sm mt-1">
+                Sri Chaitanya Junior College, Ongole
+              </p>
+              <p class="text-slate-400 text-sm mt-3 leading-relaxed">
+                Strong analytical and problem-solving foundation in Higher Mathematics, Physical Sciences, and logical reasoning.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 3: Secondary School (100% Score) -->
+          <div class="relative pl-8 group">
+            <div class="absolute -left-[17px] top-1.5 w-8 h-8 rounded-full bg-slate-950 border-2 border-amber-400 flex items-center justify-center group-hover:scale-110 transition-transform">
+              <div class="w-2.5 h-2.5 rounded-full bg-amber-400"></div>
+            </div>
+
+            <div class="bg-slate-900/90 border border-slate-800 p-6 sm:p-8 rounded-2xl group-hover:border-amber-500/40 transition-all shadow-xl">
+              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-2">
+                <span class="px-3 py-1 rounded-md bg-amber-950/80 border border-amber-800 text-amber-300 text-xs font-mono font-semibold inline-block w-fit">
+                  2019 &ndash; 2020
+                </span>
+                <span class="text-amber-400 font-bold font-mono text-sm">Marks: 600 / 600 (Perfect 100%)</span>
+              </div>
+              <h3 class="text-xl font-bold text-white">
+                Board of Secondary Education (SSC)
+              </h3>
+              <p class="text-slate-300 font-medium text-sm mt-1">
+                Trinity High School, Ongole
+              </p>
+              <p class="text-slate-400 text-sm mt-3 leading-relaxed">
+                Achieved a flawless 600/600 perfect score across all state examinations, demonstrating exceptional diligence, academic discipline, and focus.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications & Accomplishments Section -->
+    <section id="certifications" class="py-20 px-4 sm:px-6 lg:px-8">
+      <div class="max-w-6xl mx-auto">
+        <div class="flex flex-col items-center text-center mb-12">
+          <span class="text-cyan-400 font-mono text-sm tracking-wider uppercase font-semibold">Accreditations</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2">Certifications &amp; Achievements</h2>
+          <div class="w-16 h-1 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full mt-3"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          
+          <!-- Cert 1: IBM Python for Data Science -->
+          <div class="bg-slate-900/80 border border-slate-800 p-6 sm:p-8 rounded-2xl flex items-start gap-5 hover:border-cyan-500/40 transition-all">
+            <div class="w-14 h-14 rounded-2xl bg-blue-600/10 border border-blue-500/20 text-blue-400 flex items-center justify-center text-2xl shrink-0">
+              <i class="fa-solid fa-certificate"></i>
+            </div>
+            <div class="space-y-2">
+              <span class="text-xs font-mono text-cyan-400 font-semibold uppercase">edX Credential</span>
+              <h3 class="text-xl font-bold text-white">IBM - Python Basics for Data Science</h3>
+              <p class="text-slate-400 text-sm leading-relaxed">
+                Issued through edX in partnership with IBM. Mastered core Python scripting, data structures (lists, tuples, dictionaries), logic branching, APIs, and data processing libraries including Pandas and NumPy.
+              </p>
+              <div class="pt-2">
+                <span class="inline-flex items-center gap-1.5 text-xs text-slate-300 font-mono">
+                  <i class="fa-solid fa-circle-check text-cyan-400"></i> Verified IBM Skill Credential
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cert 2: Cyber Security Foundations -->
+          <div class="bg-slate-900/80 border border-slate-800 p-6 sm:p-8 rounded-2xl flex items-start gap-5 hover:border-cyan-500/40 transition-all">
+            <div class="w-14 h-14 rounded-2xl bg-rose-600/10 border border-rose-500/20 text-rose-400 flex items-center justify-center text-2xl shrink-0">
+              <i class="fa-solid fa-user-shield"></i>
+            </div>
+            <div class="space-y-2">
+              <span class="text-xs font-mono text-rose-400 font-semibold uppercase">CyberFrat Training</span>
+              <h3 class="text-xl font-bold text-white">Cyber Security Foundations Training</h3>
+              <p class="text-slate-400 text-sm leading-relaxed">
+                Conducted by CyberFrat. Covered network defenses, threat identification, vulnerability assessment principles, identity access control, and fundamental security safeguards in enterprise IT infrastructures.
+              </p>
+              <div class="pt-2">
+                <span class="inline-flex items-center gap-1.5 text-xs text-slate-300 font-mono">
+                  <i class="fa-solid fa-circle-check text-rose-400"></i> Industry Security Certified
+                </span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Accomplishment Highlights Banner -->
+        <div class="mt-8 rounded-2xl bg-gradient-to-r from-slate-900 via-slate-950 to-slate-900 border border-slate-800 p-6 flex flex-col md:flex-row items-center justify-between gap-6">
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center text-xl shrink-0">
+              <i class="fa-solid fa-trophy"></i>
+            </div>
+            <div>
+              <h4 class="text-white font-bold text-base">PACE Institute Institutional Recognitions</h4>
+              <p class="text-slate-400 text-xs mt-0.5">Active leadership contributor in student affairs, welfare, and social responsibility</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-3">
+            <span class="px-3.5 py-1.5 rounded-lg bg-slate-800 text-slate-300 text-xs font-semibold border border-slate-700">
+              NSS Coordinator
+            </span>
+            <span class="px-3.5 py-1.5 rounded-lg bg-slate-800 text-slate-300 text-xs font-semibold border border-slate-700">
+              Health Watch Committee
+            </span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-4 sm:px-6 lg:px-8 bg-slate-900/40 border-t border-slate-800/60">
+      <div class="max-w-6xl mx-auto">
+        <div class="flex flex-col items-center text-center mb-12">
+          <span class="text-cyan-400 font-mono text-sm tracking-wider uppercase font-semibold">Initiate Dialogue</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2">Get In Touch</h2>
+          <div class="w-16 h-1 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full mt-3"></div>
+          <p class="text-slate-400 text-sm max-w-xl mt-3">
+            Whether you have an internship opening, full-time engineering role, or exciting collaborative project, my inbox is always open.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+          
+          <!-- Contact Info Cards -->
+          <div class="lg:col-span-5 space-y-4">
+            
+            <!-- Email Card -->
+            <div class="bg-slate-900/90 border border-slate-800 p-6 rounded-2xl flex items-center justify-between hover:border-cyan-500/40 transition-all">
+              <div class="flex items-center gap-4">
+                <div class="w-12 h-12 rounded-xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center text-xl shrink-0">
+                  <i class="fa-regular fa-envelope"></i>
+                </div>
+                <div>
+                  <span class="text-xs text-slate-400 font-mono uppercase">Email Address</span>
+                  <div class="text-white font-semibold text-sm break-all">bhargavimarturi3@gmail.com</div>
+                </div>
+              </div>
+              <button onclick="copyToClipboard('bhargavimarturi3@gmail.com', this)" class="p-2.5 rounded-lg bg-slate-800 hover:bg-cyan-500 hover:text-slate-950 text-slate-300 transition-colors" title="Copy Email">
+                <i class="fa-regular fa-copy"></i>
+              </button>
+            </div>
+
+            <!-- Phone Card -->
+            <div class="bg-slate-900/90 border border-slate-800 p-6 rounded-2xl flex items-center justify-between hover:border-cyan-500/40 transition-all">
+              <div class="flex items-center gap-4">
+                <div class="w-12 h-12 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-xl shrink-0">
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+                <div>
+                  <span class="text-xs text-slate-400 font-mono uppercase">Phone Number</span>
+                  <div class="text-white font-semibold text-sm">+91 7702793953</div>
+                </div>
+              </div>
+              <a href="tel:+917702793953" class="p-2.5 rounded-lg bg-slate-800 hover:bg-emerald-500 hover:text-slate-950 text-slate-300 transition-colors" title="Call">
+                <i class="fa-solid fa-phone-volume"></i>
+              </a>
+            </div>
+
+            <!-- Location Card -->
+            <div class="bg-slate-900/90 border border-slate-800 p-6 rounded-2xl flex items-center gap-4 hover:border-cyan-500/40 transition-all">
+              <div class="w-12 h-12 rounded-xl bg-violet-500/10 text-violet-400 flex items-center justify-center text-xl shrink-0">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div>
+                <span class="text-xs text-slate-400 font-mono uppercase">Location</span>
+                <div class="text-white font-semibold text-sm">Andhra Pradesh / Hyderabad, India</div>
+              </div>
+            </div>
+
+            <!-- Social Links Bar -->
+            <div class="p-6 rounded-2xl bg-slate-900/90 border border-slate-800 flex items-center justify-between">
+              <span class="text-xs font-mono uppercase text-slate-400">Social Profiles:</span>
+              <div class="flex items-center gap-3">
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-xl bg-slate-800 hover:bg-[#0077b5] text-slate-300 hover:text-white flex items-center justify-center transition-all" title="LinkedIn Profile">
+                  <i class="fa-brands fa-linkedin-in text-base"></i>
+                </a>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-xl bg-slate-800 hover:bg-white hover:text-slate-950 text-slate-300 flex items-center justify-center transition-all" title="GitHub Profile">
+                  <i class="fa-brands fa-github text-base"></i>
+                </a>
+                <a href="mailto:bhargavimarturi3@gmail.com" class="w-10 h-10 rounded-xl bg-slate-800 hover:bg-cyan-500 hover:text-slate-950 text-slate-300 flex items-center justify-center transition-all" title="Email Direct">
+                  <i class="fa-solid fa-envelope text-base"></i>
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Interactive Message Form -->
+          <div class="lg:col-span-7 bg-slate-900/90 border border-slate-800 p-8 rounded-2xl shadow-xl">
+            <div class="flex items-center justify-between mb-2 flex-wrap gap-2">
+              <h3 class="text-xl font-bold text-white">Send a Message</h3>
+              <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-cyan-950 border border-cyan-800 text-cyan-300 text-xs font-mono">
+                <i class="fa-solid fa-envelope-circle-check text-xs"></i> Direct to bhargavimarturi3@gmail.com
+              </span>
+            </div>
+            <p class="text-slate-400 text-xs sm:text-sm mb-6">Your message will be delivered directly to Bhargavi's email inbox.</p>
+
+            <form id="contactForm" action="https://formsubmit.co/bhargavimarturi3@gmail.com" method="POST" onsubmit="handleContactSubmit(event)" class="space-y-4">
+              <!-- FormSubmit Anti-Spam & Delivery Configuration -->
+              <input type="hidden" name="_captcha" value="false">
+              <input type="hidden" name="_template" value="table">
+              <input type="hidden" name="_subject" value="New Portfolio Contact Message for Bhargavi!">
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-xs font-mono text-slate-300 uppercase mb-2">Your Name</label>
+                  <input type="text" id="senderName" name="name" required placeholder="John Doe" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-cyan-400 transition-colors">
+                </div>
+                <div>
+                  <label class="block text-xs font-mono text-slate-300 uppercase mb-2">Email Address</label>
+                  <input type="email" id="senderEmail" name="email" required placeholder="john@example.com" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-cyan-400 transition-colors">
+                </div>
+              </div>
+
+              <div>
+                <label class="block text-xs font-mono text-slate-300 uppercase mb-2">Subject</label>
+                <input type="text" id="senderSubject" name="subject" required placeholder="Job Opportunity / Project Collaboration" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-cyan-400 transition-colors">
+              </div>
+
+              <div>
+                <label class="block text-xs font-mono text-slate-300 uppercase mb-2">Message</label>
+                <textarea id="senderMessage" name="message" rows="4" required placeholder="Hi Bhargavi, we came across your DRDO AI internship and IoT portfolio..." class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-cyan-400 transition-colors"></textarea>
+              </div>
+
+              <button type="submit" id="submitBtn" class="w-full py-3.5 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-slate-950 font-bold text-sm shadow-lg shadow-cyan-500/25 flex items-center justify-center gap-2 hover:scale-[1.01] active:scale-[0.99] transition-all disabled:opacity-60 disabled:cursor-not-allowed">
+                <i class="fa-solid fa-paper-plane" id="submitBtnIcon"></i>
+                <span id="submitBtnText">Send Message Directly to Email</span>
+              </button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-800/80 bg-slate-950 py-12 px-4 sm:px-6 lg:px-8 relative z-10">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
+      <div class="flex items-center gap-3">
+        <div class="w-8 h-8 rounded-lg bg-cyan-500 flex items-center justify-center text-slate-950 font-bold text-sm">
+          BM
+        </div>
+        <div>
+          <div class="font-bold text-white text-sm">Bhargavi Marturi</div>
+          <div class="text-xs text-slate-400 font-mono">B.Tech in IoT & Cybersecurity Blockchain (2026)</div>
+        </div>
+      </div>
+
+      <div class="text-xs text-slate-400">
+        &copy; 2026 Bhargavi Marturi. All rights reserved. Designed for Excellence.
+      </div>
+
+      <div class="flex items-center gap-4 text-xs font-mono text-slate-400">
+        <a href="#hero" class="hover:text-cyan-400 transition-colors">Back to Top <i class="fa-solid fa-arrow-up ml-1"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Resume Modal -->
+  <div id="resumeModal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden items-center justify-center p-4">
+    <div class="bg-slate-900 border border-slate-800 rounded-2xl max-w-3xl w-full max-h-[90vh] overflow-y-auto p-6 sm:p-8 shadow-2xl relative">
+      <div class="flex items-center justify-between pb-4 border-b border-slate-800 mb-6">
+        <div class="flex items-center gap-3">
+          <i class="fa-solid fa-file-pdf text-red-400 text-xl"></i>
+          <h3 class="text-xl font-bold text-white">Bhargavi Marturi &mdash; Resume</h3>
+        </div>
+        <div class="flex items-center gap-2 sm:gap-3 flex-wrap justify-end">
+          <a href="resume.html" target="_blank" class="px-3 py-1.5 rounded-lg bg-cyan-600/30 hover:bg-cyan-600/50 text-xs text-cyan-300 border border-cyan-500/40 flex items-center gap-1.5 transition-colors">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i> Full Page
+          </a>
+          <button onclick="window.print()" class="px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-xs text-slate-300 flex items-center gap-1.5">
+            <i class="fa-solid fa-print"></i> Print
+          </button>
+          <button onclick="closeResumeModal()" class="text-slate-400 hover:text-white text-lg p-1.5" aria-label="Close Resume Modal">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Printable Resume Content -->
+      <div class="text-slate-200 text-sm space-y-6 print:text-black">
+        <!-- Header -->
+        <div class="text-center pb-4 border-b border-slate-800">
+          <h1 class="text-2xl font-bold text-white tracking-wide">BHARGAVI MARTURI</h1>
+          <div class="flex flex-wrap justify-center gap-4 text-xs text-slate-300 font-mono mt-2">
+            <span><i class="fa-regular fa-envelope text-cyan-400 mr-1"></i> bhargavimarturi3@gmail.com</span>
+            <span><i class="fa-solid fa-phone text-emerald-400 mr-1"></i> +91- 7702793953</span>
+            <span><i class="fa-brands fa-linkedin text-blue-400 mr-1"></i> LinkedIn</span>
+            <span><i class="fa-brands fa-github text-slate-400 mr-1"></i> GitHub</span>
+          </div>
+        </div>
+
+        <!-- Objective -->
+        <div>
+          <h4 class="text-xs uppercase font-mono tracking-wider text-cyan-400 font-bold border-b border-slate-800 pb-1 mb-2">CAREER OBJECTIVE</h4>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            To secure a challenging position where I can apply my skills, learn new technologies, and contribute to the growth of the organization while developing myself professionally.
+          </p>
+        </div>
+
+        <!-- Education -->
+        <div>
+          <h4 class="text-xs uppercase font-mono tracking-wider text-cyan-400 font-bold border-b border-slate-800 pb-1 mb-2">EDUCATION</h4>
+          <div class="space-y-3 text-xs">
+            <div>
+              <div class="flex justify-between font-semibold text-white">
+                <span>PACE Institute of Technology and Sciences, Valluru</span>
+                <span class="font-mono text-cyan-300">CGPA: 8.12/10 (2026)</span>
+              </div>
+              <div class="text-slate-400">Bachelor of Technology in Internet of Things and Cybersecurity Blockchain</div>
+            </div>
+
+            <div>
+              <div class="flex justify-between font-semibold text-white">
+                <span>Sri Chaitanya Junior College, Ongole</span>
+                <span class="font-mono text-slate-300">762 / 1000 (2020-2022)</span>
+              </div>
+              <div class="text-slate-400">Board of Intermediate - MPC</div>
+            </div>
+
+            <div>
+              <div class="flex justify-between font-semibold text-white">
+                <span>Trinity High School, Ongole</span>
+                <span class="font-mono text-amber-300">600 / 600 (2019-2020)</span>
+              </div>
+              <div class="text-slate-400">Board of Secondary Education</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project -->
+        <div>
+          <h4 class="text-xs uppercase font-mono tracking-wider text-cyan-400 font-bold border-b border-slate-800 pb-1 mb-2">PROJECT</h4>
+          <div class="text-xs space-y-1">
+            <div class="font-bold text-white flex justify-between">
+              <span>AGRI CHAT-BOT USING NLP</span>
+              <span class="text-slate-400 font-mono">Python, NLTK, Sentence-transformer, Gradio</span>
+            </div>
+            <p class="text-slate-300 leading-relaxed">
+              Developed an AI-powered Agri Chatbot using Python and NLP to provide farmers with real-time agricultural guidance, crop suggestions, and farming support.
+            </p>
+          </div>
+        </div>
+
+        <!-- Internship -->
+        <div>
+          <h4 class="text-xs uppercase font-mono tracking-wider text-cyan-400 font-bold border-b border-slate-800 pb-1 mb-2">INTERNSHIP</h4>
+          <div class="text-xs space-y-1">
+            <div class="font-bold text-white">AI Technologies &bull; DLRL, DRDO, Hyderabad</div>
+            <p class="text-slate-300 italic">
+              &ldquo;Completed internship at DRDO focusing on AI technologies and basic security implementations, gaining exposure to real-time systems.&rdquo;
+            </p>
+          </div>
+        </div>
+
+        <!-- Skills -->
+        <div>
+          <h4 class="text-xs uppercase font-mono tracking-wider text-cyan-400 font-bold border-b border-slate-800 pb-1 mb-2">SKILLS</h4>
+          <div class="grid grid-cols-2 gap-2 text-xs text-slate-300">
+            <div><strong class="text-white">Programming:</strong> Python, Java, C</div>
+            <div><strong class="text-white">Web Technologies:</strong> HTML/CSS, JavaScript</div>
+            <div><strong class="text-white">Databases:</strong> MySQL, Mongo DB</div>
+            <div><strong class="text-white">Framework:</strong> Django</div>
+            <div class="col-span-2"><strong class="text-white">Tools:</strong> Excel, GitHub, VS Code</div>
+          </div>
+        </div>
+
+        <!-- Certification -->
+        <div>
+          <h4 class="text-xs uppercase font-mono tracking-wider text-cyan-400 font-bold border-b border-slate-800 pb-1 mb-2">CERTIFICATION</h4>
+          <ul class="list-disc list-inside text-xs text-slate-300 space-y-1">
+            <li>IBM - Python Basics for Data Science - EDX</li>
+            <li>Cyber Security Foundations Training - CyberFrat</li>
+          </ul>
+        </div>
+
+        <!-- Strengths & Accomplishments -->
+        <div class="grid grid-cols-2 gap-4">
+          <div>
+            <h4 class="text-xs uppercase font-mono tracking-wider text-cyan-400 font-bold border-b border-slate-800 pb-1 mb-2">STRENGTHS</h4>
+            <p class="text-xs text-slate-300">Quick learner | Clear Communicator | Time Management</p>
+          </div>
+          <div>
+            <h4 class="text-xs uppercase font-mono tracking-wider text-cyan-400 font-bold border-b border-slate-800 pb-1 mb-2">ACCOMPLISHMENTS</h4>
+            <ul class="text-xs text-slate-300 list-disc list-inside space-y-1">
+              <li>NSS Coordinator - PACE Institute</li>
+              <li>Health Watch committee Member - PACE Institute</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Agri Bot Architecture Modal -->
+  <div id="agriDetailsModal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden items-center justify-center p-4">
+    <div class="bg-slate-900 border border-slate-800 rounded-2xl max-w-2xl w-full p-6 sm:p-8 shadow-2xl relative">
+      <div class="flex items-center justify-between pb-4 border-b border-slate-800 mb-6">
+        <h3 class="text-xl font-bold text-white flex items-center gap-2">
+          <i class="fa-solid fa-diagram-project text-cyan-400"></i> Agri-Chatbot NLP Architecture
+        </h3>
+        <button onclick="closeAgriDetailsModal()" class="text-slate-400 hover:text-white text-lg p-1.5">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <div class="space-y-4 text-sm text-slate-300">
+        <p>The <strong>Agri Chat-Bot</strong> solves key information accessibility problems for farmers by interpreting natural language inquiries and matching them to agricultural solutions:</p>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 my-4 text-xs font-mono text-center">
+          <div class="p-3 bg-slate-950 rounded-xl border border-slate-800">
+            <div class="text-cyan-400 font-bold text-sm">1. NLTK Preprocessing</div>
+            <p class="text-slate-400 mt-1">Tokenization, Lemmatization, Stop-word filtering</p>
+          </div>
+          <div class="p-3 bg-slate-950 rounded-xl border border-slate-800">
+            <div class="text-teal-400 font-bold text-sm">2. Sentence-Transformers</div>
+            <p class="text-slate-400 mt-1">Cosine similarity against agricultural knowledge embeddings</p>
+          </div>
+          <div class="p-3 bg-slate-950 rounded-xl border border-slate-800">
+            <div class="text-emerald-400 font-bold text-sm">3. Gradio Interface</div>
+            <p class="text-slate-400 mt-1">Rapid, responsive web client accessible on mobile devices</p>
+          </div>
+        </div>
+
+        <h4 class="font-bold text-white text-xs uppercase tracking-wider font-mono">Use Cases Handled:</h4>
+        <ul class="list-disc list-inside space-y-1.5 text-xs text-slate-300">
+          <li><strong>Crop Recommendation:</strong> Suggests optimal crops based on soil type, seasonal weather, and regional rainfall.</li>
+          <li><strong>Pest & Disease Diagnosis:</strong> Recommends curative organic and chemical remedies for leaf spots, blast, and wilt.</li>
+          <li><strong>Fertilizer & Nutrition Guidance:</strong> Calculates N-P-K nutrient schedules for staple crops like Rice, Cotton, and Pulses.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div id="toast" class="fixed bottom-6 right-6 z-50 transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none px-4 py-3 rounded-xl bg-cyan-500 text-slate-950 font-semibold text-sm shadow-xl flex items-center gap-3">
+    <i class="fa-solid fa-circle-check text-base"></i>
+    <span id="toastMessage">Action completed successfully!</span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
